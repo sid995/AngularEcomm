@@ -7,13 +7,14 @@ import { Component, input, output } from '@angular/core';
     <button
       class="cursor-pointer bg-blue-500 text-white w-full border px-5 py-2 rounded-xl shadow-md hover:opacity-90"
       (click)="btnClicked.emit()"
+      rou
     >
       {{ label() }}
     </button>
   `,
   styles: ``,
 })
-export class PrimaryButton {
+export class PrimaryButtonComponent {
   label = input('');
 
   btnClicked = output();

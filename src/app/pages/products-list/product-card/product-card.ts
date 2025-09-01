@@ -1,11 +1,11 @@
 import { Component, inject, input } from '@angular/core';
 import { Product } from '../../../models/products.models';
-import { PrimaryButton } from '../../../components/primary-button/primary-button';
+import { PrimaryButtonComponent } from '../../../components/primary-button/primary-button';
 import { CartService } from '../../../services/cart.service';
 
 @Component({
   selector: 'app-product-card',
-  imports: [PrimaryButton],
+  imports: [PrimaryButtonComponent],
   template: `
     <div
       class="bg-white shadow-md border border-gray-100 rounded-xl p-6 flex flex-col gap-6 relative"
