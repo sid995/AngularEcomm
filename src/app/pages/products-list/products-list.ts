@@ -8,7 +8,7 @@ import { ProductCard } from './product-card/product-card';
   template: `
     <div class="p-8 grid grid-cols-2 gap-4">
       @for(product of products(); track product.id) {
-      <app-product-card />
+      <app-product-card [product]="product" />
       }
     </div>
   `,
